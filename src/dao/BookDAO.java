@@ -60,7 +60,7 @@ public class BookDAO {
 	 * @param curPage
 	 * @return 成功则返回图书信息列表，否则返回null。
 	 */
-	public PageBean getBookInStoreByName(String storeName, String bookName, int curPage) {
+	public PageBean getBookByNameInStore(String storeName, String bookName, int curPage) {
 		PageBean pb = null;
 		
 		return pb; 
@@ -73,7 +73,7 @@ public class BookDAO {
 	 * @param curPage
 	 * @return 成功则返回图书信息列表，否则返回null。
 	 */
-	public PageBean getBookInStoreByClass(String storeName, String bookClass, int curPage) {
+	public PageBean getBookByClassInStore(String storeName, String bookClass, int curPage) {
 		PageBean pb = null;
 		
 		return pb; 
@@ -84,7 +84,7 @@ public class BookDAO {
 	 * @param storeName
 	 * @return 成功则返回最新上传的4本图书信息，否则返回null。
 	 */
-	public List<Book> getBookByLastDate(String storeName) {
+	public List<Book> getBookByLastDateInStore(String storeName) {
 		List<Book> list = null;
 		
 		return list;
@@ -95,7 +95,7 @@ public class BookDAO {
 	 * @param storeName
 	 * @return 成功则返回店铺内销量的4本图书信息，否则返回null。
 	 */
-	public List<Book> getBookByHotSale(String storeName) {
+	public List<Book> getBookByHotSaleInStore(String storeName) {
 		List<Book> list = null;
 		
 		return list;
@@ -105,7 +105,7 @@ public class BookDAO {
 	 * 功能：获取图书表销量最好的4本图书信息
 	 * @return 成功则返回图书表中销量最好的4本图书信息，否则返回null。
 	 */
-	public List<Book> getBookInHotSale() {
+	public List<Book> getBookByHotSale() {
 		List<Book> list = null;
 		
 		return list;
@@ -115,7 +115,7 @@ public class BookDAO {
 	 * 功能：获取图书表中最新上传的4本图书信息
 	 * @return 成功则返回图书表中最新上传的4本图书信息，否则返回null。
 	 */
-	public List<Book> getBookInLastDate() {
+	public List<Book> getBookIByLastDate() {
 		List<Book> list = null;
 		
 		return list;
@@ -124,23 +124,23 @@ public class BookDAO {
 	/**
 	 * 功能：往数据库中添加一本书
 	 * @param book
-	 * @return 成功则返回受影响的行数，否则返回0。
+	 * @return 成功则返回true，否则返回false。
 	 */
-	public int addBook(Book book) {
-		int recNo = 0;
+	public boolean addBook(Book book) {
+		boolean success = false;
 		
-		return recNo;
+		return success;
 	}
 	
 	/**
 	 * 功能：根据图书编号
 	 * @param bookId
-	 * @return 成功则返回受影响的行数，否则返回0。
+	 * @return 成功则返回true，否则返回false。
 	 */
-	public int deleteBook(int bookId) {
-		int recNo = 0;
+	public boolean deleteBook(int bookId) {
+		boolean success = false;
 		
-		return recNo;
+		return success;
 	}
 	
 	/**
@@ -148,10 +148,10 @@ public class BookDAO {
 	 * @param book
 	 * @return 成功则返回受影响的行数，否则返回0。
 	 */
-	public int updateBook(Book book) {
-		int recNo = 0;
+	public boolean updateBook(Book book) {
+		boolean success = false;
 		
-		return recNo;
+		return success;
 	}
 	
 }
