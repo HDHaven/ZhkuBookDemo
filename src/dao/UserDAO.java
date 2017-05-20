@@ -36,13 +36,17 @@ public class UserDAO {
 	}
 	
 	/**
-	 * 功能：根据用户名判断该用户名是否存在
+	 * 功能：根据用户名判断该用户名是否存在，用于注册时判断
 	 * @param userName
 	 * @return 存在则返回true，否则返回false。
 	 */
 	public boolean isExisted(String userName) {
 		boolean exist = false;
-		
+		String sql = "select * from tb_User where userName = ? ";
+		String[] params = { userName };
+		if(db.getMap(sql, params) != null) {
+			exist = true;	// 用户名已经存在
+		}
 		return exist;
 	}
 	
@@ -54,7 +58,11 @@ public class UserDAO {
 	 */
 	public boolean register(String userName, String password) {
 		boolean success = false;
-		
+		String sql = "insert into tb_User values(null, ?, ?, '1',null,null,null) ";
+		String[] params = { userName, password };
+		if(db.update(sql, params) > 0) {
+			success = true;	// 添加成功
+		}
 		return success;
 	}
 	
@@ -66,7 +74,11 @@ public class UserDAO {
 	 */
 	public boolean updatePassword(String userName, String newPassword) {
 		boolean success = false;
-		
+		String sql = "update tb_User set password = ? where userName = ? ";
+		String[] params = { newPassword, userName };
+		if(db.update(sql, params) > 0) {
+			success = true;	// 修改成功
+		}
 		return success;
 	}
 	
@@ -77,7 +89,14 @@ public class UserDAO {
 	 */
 	public boolean updateAddr(User user) {
 		boolean success = false;
-		
+		String sql = "update tb_User set userAddr = ?, userPhone = ?, userConsignee = ? where userName = ? ";
+		String[] params = {
+				user.getUserAddr(), user.getUserPhone(),
+				user.getUserConsignee(), user.getUserName()
+		};
+		if(db.update(sql, params) > 0) {
+			success = true;
+		}
 		return success;
 	}
 	
@@ -88,7 +107,9 @@ public class UserDAO {
 	 */
 	public Map getUserByName(String userName) {
 		Map m = null;
-		
+		String sql = "select * from tb_User where userName = ? ";
+		String[] params = { userName };
+		m = db.getMap(sql, params);
 		return m;
 	}
 	
@@ -99,7 +120,8 @@ public class UserDAO {
 	 */
 	public PageBean getAllUser(int curPage) {
 		PageBean pb = null;
-		
+		String sql = "select * from tb_User";
+		pb = db.getPageBean(sql, null, curPage);
 		return pb;
 	}
 	

@@ -158,6 +158,7 @@ public class DBUtil {
 			recNo = pstmt.executeUpdate();
 		} catch (SQLException e) {
 			System.out.println("更新数据失败");
+			recNo = 0;
 			e.printStackTrace();
 		} finally {
 			close();

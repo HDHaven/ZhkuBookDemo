@@ -9,23 +9,29 @@ public class Store {
 	private String userName;// 店铺主人
 	private String storeSaleNum;// 店铺图书总销量
 	private String storeSale;// 店铺总销售额
+	private String storeScore;// 店铺总评分
+	private String storeComment;// 店铺总评论条数
 	private String storeEvaluate;// 店铺评价
 	private String storeDescript;// 店铺描述
 	private String storeLicense;// 店铺营业执照
+	private String storeState;// 店铺状态（营业中、休息中、整改中）
 	
 	public Store() {
 	}
 
-	public Store(String storeName, String userName, String storeSaleNum, String storeSale, String storeEvaluate,
-			String storeDescript, String storeLicense) {
+	public Store(String storeName, String userName, String storeSaleNum, String storeSale, String storeScore,
+			String storeComment, String storeEvaluate, String storeDescript, String storeLicense, String storeState) {
 		super();
 		this.storeName = storeName;
 		this.userName = userName;
 		this.storeSaleNum = storeSaleNum;
 		this.storeSale = storeSale;
+		this.storeScore = storeScore;
+		this.storeComment = storeComment;
 		this.storeEvaluate = storeEvaluate;
 		this.storeDescript = storeDescript;
 		this.storeLicense = storeLicense;
+		this.storeState = storeState;
 	}
 
 	public int getStoreId() {
@@ -68,6 +74,22 @@ public class Store {
 		this.storeSale = storeSale;
 	}
 
+	public String getStoreScore() {
+		return storeScore;
+	}
+
+	public void setStoreScore(String storeScore) {
+		this.storeScore = storeScore;
+	}
+
+	public String getStoreComment() {
+		return storeComment;
+	}
+
+	public void setStoreComment(String storeComment) {
+		this.storeComment = storeComment;
+	}
+
 	public String getStoreEvaluate() {
 		return storeEvaluate;
 	}
@@ -91,5 +113,13 @@ public class Store {
 	public void setStoreLicense(String storeLicense) {
 		this.storeLicense = storeLicense;
 	}
-	
+
+	public String getStoreState() {
+		return storeState;
+	}
+
+	public void setStoreState(String storeState) {
+		this.storeState = storeState;
+	}
+
 }

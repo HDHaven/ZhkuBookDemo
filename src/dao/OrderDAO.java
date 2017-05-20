@@ -37,7 +37,9 @@ public class OrderDAO {
 	 */
 	public PageBean getOrderByStateInUser(String userName, String orderState, int curPage) {
 		PageBean pb = null;
-		
+		String sql = "select * from tb_Order where userName = ? and orderState = ? ";
+		String[] params = { userName, orderState };
+		pb = db.getPageBean(sql, params, curPage);
 		return pb;
 	}
 	
@@ -49,7 +51,9 @@ public class OrderDAO {
 	 */
 	public PageBean getOrderByStoreName(String storeName, int curPage) {
 		PageBean pb = null;
-		
+		String sql = "select * from tb_Order where storeName = ? ";
+		String[] params = { storeName };
+		pb = db.getPageBean(sql, params, curPage);
 		return pb;
 	}
 	
@@ -62,30 +66,45 @@ public class OrderDAO {
 	 */
 	public PageBean getOrderByStateInStore(String storeName, String orderState, int curPage) {
 		PageBean pb = null;
-		
+		String sql = "select * from tb_Order where storeName = ? and orderState = ? ";
+		String[] params = { storeName, orderState };
+		pb = db.getPageBean(sql, params, curPage);
 		return pb;
 	}
 	
 	/**
 	 * 功能：往数据库添加一条订单记录
-	 * @param order
+	 * @param o
 	 * @return 成功则返回true，否则返回false。
 	 */
-	public boolean addOrder(Order order) {
+	public boolean addOrder(Order o) {
 		boolean success = false;
-		
+		String sql = "insert into tb_Order values(null,?,?,?,?,?,?,?,?,?) ";
+		String[] params = {
+				o.getStoreName(),o.getOrderDate(),o.getOrderPrice(),o.getOrderState(),
+				o.getOrderConsignee(),o.getOrderAddr(),o.getOrderPhone(),
+				o.getUserName(),o.getProductList()
+		};
+		if(db.update(sql, params) > 0) {
+			success = true;	// 添加成功
+		}
 		return success;
 	}
 	
 	/**
-	 * 功能：根据订单编号对订单状态进行修改
-	 * @param orderId
+	 * 功能：根据用户名和订单日期对订单状态进行修改
+	 * @param userName
+	 * @param orderDate
 	 * @param newOrderState
 	 * @return 成功则返回true，否则返回false。
 	 */
-	public boolean updateOrderState(int orderId, String newOrderState) {
+	public boolean updateOrderState(String userName, String orderDate, String newOrderState) {
 		boolean success = false;
-		
+		String sql = "update tb_Order set orderState = ? where userName = ? and orderDate = ? ";
+		String[] params = { newOrderState, userName, orderDate };
+		if(db.update(sql, params) > 0) {
+			success = true;	// 修改成功
+		}
 		return success;
 	}
 	
