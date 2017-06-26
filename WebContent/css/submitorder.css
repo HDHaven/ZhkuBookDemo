@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+
+#ordermessage {
+	width:900px;
+	margin-left:150px;
+}
+
+#table1 {
+	width:900px;
+}
+
+#table2 {
+	width:900px;
+	height:100px;
+	//border:1px solid;
+	background-color:#C2C287;
+	color:red;
+	text-align:center;
+	
+}
+
+#table2 td {
+	//border:1px solid;
+}
+
+#table2 img{
+	width:100%;
+	height:100%;
+}
+
+#table2_img {
+	width:80px;
+	height:100px;
+}
+
+#table2_name{
+	width:120px;
+}
+
+#table2_price{
+	width:225px;
+}
+
+#table2_count{
+	width:225px;
+}
+
+#table2_totalprice{
+	width:225px;
+}
+
+#totalprice {
+	float:right;
+	font-size:20px;
+	color:red;
+}
+
+#clear {
+	clear:both;
+}
+
+

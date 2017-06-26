@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+#writemessage {
+	float:left;
+	margin-left:50px;
+	margin-top:15px;
+}
+
+#writemessage span {
+	padding-top:-10px;
+}
+
+#writemessage table {
+	border-spacing:7px;
+}

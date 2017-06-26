@@ -1,0 +1,170 @@
+@CHARSET "UTF-8";
+
+#clear {
+	clear: both;
+}
+
+#personaldetil {
+	width:1000px;
+	margin-left:170px;
+	border:solid 1px;
+/* 	float:left; */
+	}
+
+#title {
+	 font-family:SimSun ;
+	 font-size:21px;
+	 color:#FF2D2D;
+	 
+}
+
+#catalog {
+	float:left;
+	margin-top:5px;
+	width:180px;
+	height:300px;
+	border:1px solid #9D9D9D;
+	text-align:center;
+	border-top: 4px solid #6C6C6C;
+	//background-color:#BEBEBE;
+}
+
+#catalog a {
+	float:left;
+	text-decoration:none;
+	color:#000000;
+	font-family:STHeiti Light [STXihei];
+	text-align:center;
+	margin-left:52px;
+	margin-top:7px;
+}
+
+#catalog  a:hover {
+	color:blue;
+} 
+
+#order {
+	float:left;
+	margin-left:50px;
+	margin-top:15px;
+}
+
+#order a {
+	float:left;
+	font-size:20px;
+	tont-family:LiSu ;
+	margin-left:15px;
+	color:#000000
+	
+}
+
+#order a:hover {
+	color:red;
+}
+
+#orderhead {
+	float:left;
+	
+}
+
+.ejectlayer {
+	visibility: hidden;
+		top: 100px; 
+		left: 50%;
+		margin-left: -300px;
+		width: 650px;
+		background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+		position: absolute;
+		z-index: 101;
+		padding: 30px 40px 34px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+.close-reveal-modal {
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 11px;
+		color: #aaa;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+		} 
+		
+#personaldetil img {
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+}
+		
+		
+.tb1{ 
+	width:750px; 
+	border-top:5px solid #48b9e5; 
+	background: #d0e7fa;
+	height:38px; 
+	margin-top:20px; 
+	margin-left:15px;
+	overflow:hidden;
+}
+
+.tb1_id{ width:187px; 
+          text-align:center; }
+
+.tb1_date{ width:187px; 
+          text-align:center; }
+
+.tb1_totalprice{ width:187px; 
+          text-align:center; }
+
+.tb1_detile{ width:187px; 
+           text-align:center;}
+
+#orderdetile {
+	float:left; 
+}
+
+.tb2{ width:750px; 
+          margin-top:20px; 
+          background:#eef6ff; 
+          border:1px solid #e5e5e5; 
+          padding-top:20px; 
+          padding-bottom:20px;
+          margin-left:15px;
+          }
+
+h3 {
+	color:blue;
+}
+
+.table3 {
+	width:620px;
+	height:100px;
+	//border:1px solid;
+	text-align:center;
+	background-color:#D2E9FF;
+    margin-top:5px;
+	margin-left:100px;
+}
+.table3_th {
+	width:60px;
+	align:center;
+	//border:1px solid;
+	height:110px;
+}
+
+.table3_th img{
+	width:100%;
+	height:100%;
+	margin-top:-5px;
+}
+
+.table4 {
+	margin-left:100px;
+}

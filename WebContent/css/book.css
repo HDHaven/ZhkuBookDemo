@@ -1,0 +1,138 @@
+#content {
+	width: 1200px;
+	margin: 8px auto 10px;
+}
+
+#bookimage {
+	float:left;
+	width:240px;
+	height:310px;
+	padding: 10px 0px;
+}
+
+#bookimage img{
+	width:240px;
+	height:310px;
+}
+
+#bookdetile {
+	float:left;
+	width:650px;
+	height:310px;
+	margin-top:5px; 
+	margin-left:20px;
+}
+
+#bookrightmessage {
+	float:left;
+	height:350px;
+	width:220px;
+	margin-left:30px;
+	border:solid 1px;
+	margin-top:8px;
+}
+
+#bookabstract textarea{
+   font-family: MS Gothic;
+   border:none;                  
+   font-size: 12pt;
+   overflow:hidden;
+   background:white;
+   disabled:disabled;
+}
+
+#bookabstract input{
+	width:40px;
+	margin-top:5px;
+  border:none;
+	readonly:readonly;	
+}
+
+#bookprice {
+	width:622px;
+	background-color:#E0E0E0;
+	border:1px solid;
+	padding:30px 20px;
+	margin-top:5px;
+	border:none;
+	font-size:1.5em;
+	color:red;
+	margin-bottom:5px;
+}
+	
+#bookprice input{
+	padding:5px;
+	width:30;
+	color:red;
+	border:none;
+	background-color:#E0E0E0;
+}
+
+#bookdetile a:hover{
+	background-color:red;
+}
+
+#bookrightmessage img{
+	width:220px;
+	height:93px;
+}
+
+#bookrightmessage input{
+	padding:5px;
+	width:80px;
+	color:red;
+	border:none;
+	background-color:#FFFFFF;
+}
+
+
+#bookrightmessage a{
+	color:red;
+	align:center;
+}
+
+#bookrightmessage a:hover{
+	background-color:#9393FF;
+}
+
+#comment {
+	width: 1200px;
+	margin: 8px auto 10px;
+	border:solid 1px;
+	float:left;
+	margin-left:35px;
+}
+
+#comment textarea{
+   font-family: MS Gothic;
+   border:none;                  
+   font-size: 12pt;
+   overflow:hidden;
+   background:white;
+   disabled:disabled;
+   margin-top:5px;
+   margin-left:10px;
+}
+
+#commentdetil {
+	margin-left:5px;
+	float:left;
+}
+
+#commentdetilperson {
+	width:125px;
+	height:68px;
+	
+	float:right;
+	margin-top:5px;
+	margin-left:18px;
+	
+}
+
+#commentdetilperson span {
+	color:red;
+}
+
+#clear {
+	clear: both;
+}

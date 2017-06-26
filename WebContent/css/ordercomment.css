@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+
+#goodsimage {
+	width:200px;
+	height:300px;
+	align:center;
+	margin-left:180px;
+	margin-top:10px;
+	border:1px solid;
+	float:left;
+	}
+	
+#goodsimage img {
+	width:200px;
+	heght:300px;
+}
+
+#goodsintro {
+	margin-left:15px;
+	margin-top:10px;
+	border:1px solid;
+	width:600px;
+	height:300px;
+	float:left;
+}
+
+#goodsintro span{
+	color:red;
+}
+#goodsintro h2 {
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+}
+#clear {
+	clear:both;
+}
+
+#comment{
+	margin-left:180px;
+	border:1px solid;
+	width:900px;
+	height:320px;
+	margin-top:15px;
+	background-color:#F0F0F0;
+}
+
+#comment span{
+	margin-left:30px;
+	font-size:20px;
+	font-weight:bold;
+}
+
+#comment textarea{
+	margin-left:30px;
+}

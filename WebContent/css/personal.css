@@ -1,0 +1,142 @@
+#clear {
+	clear: both;
+}
+
+#personaldetil {
+	width:1000px;
+	margin-left:170px;
+	//border:solid 1px;
+	float:left;
+	}
+
+#title {
+	 font-family:SimSun ;
+	 font-size:21px;
+	 color:#FF2D2D;
+	 
+}
+
+#catalog {
+	float:left;
+	margin-top:5px;
+	width:180px;
+	height:300px;
+	border:1px solid #9D9D9D;
+	text-align:center;
+	border-top: 4px solid #6C6C6C;
+	//background-color:#BEBEBE;
+}
+
+#catalog a {
+	float:left;
+	text-decoration:none;
+	color:#000000;
+	font-family:STHeiti Light [STXihei];
+	text-align:center;
+	margin-left:52px;
+	margin-top:7px;
+}
+
+#catalog  a:hover {
+	color:blue;
+} 
+
+#personaldetil img {
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+}
+
+#order {
+	float:left;
+	margin-left:50px;
+	margin-top:15px;
+}
+
+#order a {
+	float:left;
+	font-size:20px;
+	tont-family:LiSu ;
+	margin-left:15px;
+	color:#000000
+	
+}
+
+#order a:hover {
+	color:red;
+}
+
+#orderhead {
+	float:left;
+	
+}
+
+.tb1{ 
+	width:750px; 
+	border-top:5px solid #48b9e5; 
+	background: #d0e7fa;
+	height:38px; 
+	margin-top:20px; 
+	margin-left:15px;
+	overflow:hidden;
+}
+
+.tb1_td1{ width:290px; text-align:center; }
+
+.tb1_td2{ width:260px; text-align:center; }
+
+.tb1_td3{ width:115px; text-align:center; }
+
+.tb1_td6{ width:135px; text-align:center;}
+
+#orderdetile {
+	float:left; 
+}
+
+.tb2{ width:750px; 
+          margin-top:20px; 
+          background:#eef6ff; 
+          border:1px solid #e5e5e5; 
+          padding-top:20px; 
+          padding-bottom:20px;
+          margin-left:15px;
+          }
+
+.tb2_td1{ width:90px; text-align:center;}
+
+.tb2_td1 img{ width:96px; height:96px; border:2px solid #c9c6c7;}
+
+.tb2_td2{ width:130px; padding-left:12px; padding-right:18px;}
+
+.tb2_td2 a{ font-size:14px; line-height:22px;}
+
+
+.ejectlayer {
+	visibility: hidden;
+		top: 100px; 
+		left: 50%;
+		margin-left: -300px;
+		width: 650px;
+		background: #eee url(modal-gloss.png) no-repeat -200px -80px;
+		position: absolute;
+		z-index: 101;
+		padding: 30px 40px 34px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+.close-reveal-modal {
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 11px;
+		color: #aaa;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+		} 

@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+
+.cart {
+	width:900px;
+	margin-left:230px;
+	border:0px;
+	margin-top:10px;
+}
+
+.cart img {
+	width:120px;
+	height:150px;
+}
+
+.text {
+	text-align:center;
+}
+
+.product {
+	width:100px;
+}
+
+.other {
+	width:140px;
+}
+
+.tablehead {
+	background-color:#ACD6FF;
+}
+
+.tablecenter {
+	background-color:#D6D6AD;
+}
+
+.jian {background: url(/ZhkuBookVersion/images/icon.png) no-repeat;
+display: inline-block;
+background-position: -166px -145px;
+height: 11px;
+width: 11px;
+margin: 0;}
+
+.jia {background: url(/ZhkuBookVersion/images/icon.png) no-repeat;
+display: inline-block;
+background-position: -178px -145px;
+height: 11px;
+width: 11px;
+margin: 0;}
+
+.jian:HOVER {background: url(/ZhkuBookVersion/images/icon.png) no-repeat;
+display: inline-block;
+background-position: -166px -125px;
+height: 11px;
+width: 11px;
+margin: 0;}
+
+.jia:HOVER {background: url(/ZhkuBookVersion/images/icon.png) no-repeat;
+display: inline-block;
+background-position: -178px -125px;
+height: 11px;
+width: 11px;
+margin: 0;}
+
+.price span {
+	color:red;
+	font-weight:bold;
+}
